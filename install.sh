@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Howdy GUI installer bootstrap.
-# Usage:  bash <(curl -fsSL https://raw.githubusercontent.com/emerytech/howdy/installer/install.sh)
+# Usage:  curl -fsSL https://raw.githubusercontent.com/emerytech/howdy/installer/install.sh -o /tmp/howdy-install.sh && bash /tmp/howdy-install.sh
 # Fetches this repo and launches the graphical installer (CLI fallback: --cli).
 #
 # Environment overrides:

@@ -4,8 +4,11 @@ A cross-distro graphical installer for [Howdy](https://github.com/boltgolt/howdy
 face authentication. One command on a fresh machine:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/emerytech/howdy/installer/install.sh)
+curl -fsSL https://raw.githubusercontent.com/emerytech/howdy/installer/install.sh -o /tmp/howdy-install.sh && bash /tmp/howdy-install.sh
 ```
+
+That form works in **any** shell. (`bash <(curl ...)` is bash/zsh-only syntax and
+fails in fish with "Invalid redirection target".)
 
 It bootstraps GTK if needed, clones this fork, and opens a wizard that:
 
