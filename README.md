@@ -1,5 +1,23 @@
 ![](https://boltgolt.nl/howdy/banner.png)
 
+> ## 🖥️ This fork adds a cross-distro GUI installer
+>
+> One command, works in **bash, zsh and fish**, on **Arch, Debian/Ubuntu,
+> Fedora and openSUSE** family distros:
+>
+> ```bash
+> curl -fsSL https://raw.githubusercontent.com/emerytech/howdy/installer/install.sh -o /tmp/howdy-install.sh && bash /tmp/howdy-install.sh
+> ```
+>
+> A wizard installs dependencies with your native package manager, builds
+> Howdy, fetches the dlib models, wires up PAM the way your distro expects
+> (keeping your password as a fallback), detects your IR camera, and enrolls
+> your face. See **[INSTALLER.md](INSTALLER.md)** for per-distro details,
+> flags, uninstall, and troubleshooting.
+>
+> Everything below is the upstream README.
+
+
 <p align="center">
 	<a href="https://github.com/boltgolt/howdy/releases">
 		<img src="https://img.shields.io/github/release/boltgolt/howdy.svg?colorB=4c1">
